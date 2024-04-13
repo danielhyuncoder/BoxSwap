@@ -1,0 +1,152 @@
+.poolContainer{
+    width:100%;
+    height:89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.poolList{
+    width:60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow:scroll;
+}
+.optionRow{
+   width:20%;
+   display: flex;
+   flex-direction: row;
+   
+   justify-content: space-between;
+}
+.newbtn{
+    padding: 15px;
+    background:rgb(81, 123, 237);
+    color:white;
+    font-weight:bold;
+    border: none;
+    cursor:pointer;
+}
+.newbtn:hover{
+    background:rgb(56, 86, 169);
+}
+.pool{
+    width:100%;
+    height:50%;
+    margin-bottom:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:url("../images/graphic.png");
+    background-size:100% 100%;
+    color:rgb(97, 97, 255);
+}
+.pool>div{
+    width:80%;
+    height:80%;
+}
+.modal {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background:rgba(32, 32, 32, 0.591);
+    top:0px;
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.innerModal{
+    width:40%;
+    height:80%;
+    background:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.innerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    height:90%;
+}
+.innerContent>h2{
+    color:rgb(93, 93, 255);
+}
+.innerContent>input{
+    padding:10px;
+    width:60%;
+    color:black;font-weight:bold;
+    outline:none;
+    border:none;
+    border-bottom:1px solid black;
+}
+.jr{
+    padding:10px;
+    font-weight:bold;
+    border:none;
+    background:none;
+    font-size:200%;
+    width:10%;
+}
+.jr:hover{
+    cursor:pointer;
+    background:rgba(88, 88, 88, 0.677);
+}
+.approveBtn{
+    padding:10px;
+    color:white;
+    font-weight:bold;
+    background:rgb(0, 102, 255);
+    border:none;
+    cursor:pointer;
+}
+.approveBtn:hover{
+    background:rgb(0, 74, 186);
+}
+.b{
+    color:rgb(0, 102, 255);
+}
+.g{
+    color:rgb(57, 161, 33);
+}
+.altBtn{
+    color:white;
+    font-weight:bold;
+    background:rgba(0, 102, 255, 0.476);
+    border:none;
+    padding:10px;
+}
+@media(max-width:1500px){
+    .optionRow{
+        width:40%;
+    }
+    .innerModal{
+        width:60%;
+    }
+    .jr{
+        width:20%;
+    }
+    .pool{
+        background-image:url("../images/graphic.png");
+        height:40%;
+    }
+}
+@media(max-width:500px){
+    .optionRow{
+        width:60%;
+    }
+    .innerModal{
+        width:80%;
+        height:90%;
+    }
+    .pool{
+        background-image:url("../images/graphic.png");
+        height:60%;
+    }
+}
